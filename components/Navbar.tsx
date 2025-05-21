@@ -1,3 +1,4 @@
+/* components/Navbar.tsx */
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,9 +9,9 @@ export default function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-white shadow-lg">
-      <div className="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
-        {/* Logo + Brand */}
-        <Link href="/" className="flex items-center space-x-2">
+      <div className="flex items-center justify-between mx-auto max-w-7xl px-4 md:px-8 py-4">
+        {/* Logo + Brand moved flush-left */}
+        <Link href="/" className="flex items-center space-x-2 lg:pl-0 pl-2">
           <Image
             src="/logo.png"
             alt="Last Supper Rentals"
@@ -57,9 +58,7 @@ export default function Navbar() {
         }`}
       >
         <div className="px-6 py-4 flex items-center justify-between">
-          <span className="text-lg font-bold text-dark-green">
-            Menu
-          </span>
+          <span className="text-lg font-bold text-dark-green">Menu</span>
           <button
             className="p-1 focus:outline-none"
             onClick={() => setOpen(false)}
@@ -94,12 +93,7 @@ export default function Navbar() {
       </div>
 
       {/* Overlay behind slide-in (for click-to-close) */}
-      {open && (
-        <div
-          className="fixed inset-0 bg-black/25 z-30"
-          onClick={() => setOpen(false)}
-        />
-      )}
+      {open && <div className="fixed inset-0 bg-black/25 z-30" onClick={() => setOpen(false)} />}    
     </header>
   );
 }

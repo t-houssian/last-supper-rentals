@@ -1,7 +1,6 @@
-// components/Layout.tsx
 import React, { ReactNode } from 'react';
 import Head from 'next/head';
-import Navbar from "./Navbar";
+import Navbar from './Navbar';
 
 type LayoutProps = {
   children: ReactNode;
@@ -14,7 +13,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => (
       <title>Last Supper Rentals</title>
     </Head>
     <Navbar />
-    <div className="pt-20 min-h-screen bg-dark-green text-neon-green">
+    <div className="pt-20 px-4 md:px-6 min-h-screen bg-dark-green text-neon-green">
       {children}
     </div>
   </>
