@@ -11,6 +11,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => (
   <>
     <Head>
       <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="icon" href="/favicon.ico" />
       <title>Last Supper Rentals</title>
     </Head>
 
