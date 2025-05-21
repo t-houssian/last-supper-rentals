@@ -14,7 +14,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => (
       <title>Last Supper Rentals</title>
     </Head>
     <Navbar />
-    <div className="min-h-screen bg-dark-green text-neon-green">
+    <div className="pt-20 min-h-screen bg-dark-green text-neon-green">
       {children}
     </div>
   </>

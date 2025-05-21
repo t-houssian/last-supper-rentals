@@ -14,7 +14,7 @@ const Home: NextPage = () => (
       />
     </Head>
     <Hero />
-    <main className="flex flex-col items-center justify-center min-h-screen px-4">
+    <main className="max-w-7xl mx-auto px-6 py-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
       <h1 className="text-5xl font-bold mb-6 text-center">
         Welcome to Last Supper Rentals
       </h1>
