@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  /* Define custom colors */
+  --color-dark-green: #013220;
+  --color-neon-green: #39FF14;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-dark-green);
+    color: var(--color-neon-green);
+  }
+}
